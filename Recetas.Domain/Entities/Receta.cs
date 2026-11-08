@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Recetas.Domain.Entidades
+namespace Recetas.Domain.Entities
 {
-    internal class Receta
+    public class Receta
     {
         public int Id { get; set; }
         public string Nombre { get; set; } = string.Empty;
