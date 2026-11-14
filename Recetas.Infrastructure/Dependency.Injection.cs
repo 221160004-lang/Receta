@@ -20,6 +20,7 @@ public static class DependencyInjection
             options.UseSqlServer(config.GetConnectionString("DefaultConnection")));
 
         services.AddScoped<ICategoriaRepository, CategoriaRepository>();
+        services.AddScoped<IRecetaRepository, RecetaRepository>();
         return services;
     }
 }
